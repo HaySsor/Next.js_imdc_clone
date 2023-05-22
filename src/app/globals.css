@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    align-items: center;
+body {
+  align-items: center;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
 }

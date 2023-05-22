@@ -11,8 +11,11 @@ export default async function Home({searchParams}) {
     }?api_key=${API_KEY}&language=en-US&page=1`,
     {next: {revalidate: 10000}}
   );
+  await new Promise((resolve) => setTimeout(() => resolve(), 1000));
   const data = await res.json();
   const results = data.results;
+
+  // console.log(results)
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');
