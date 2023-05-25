@@ -10,8 +10,8 @@ export default function NavbarItem({title, param}) {
     <div>
       <Link
         href={`/?genre=${param}`}
-        className={`cursor-pointer hover:text-amber-500 p-2 ${
-          genre && genre === param ? 'text-amber-500' : ''
+        className={`cursor-pointer hover:text-amber-100 p-2 ${
+          genre && genre === param ? 'text-amber-100' : ''
         } `}>
         {title}
       </Link>
